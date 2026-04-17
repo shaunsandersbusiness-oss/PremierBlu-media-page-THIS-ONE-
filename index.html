@@ -695,6 +695,14 @@
       .footer-container { flex-direction: column; gap: 40px; text-align: center; align-items: center; }
       .footer-left { align-items: center; }
       .footer-right { align-items: center; text-align: center; }
+      #work-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+      }
+      #work-grid > div:first-child {
+        grid-column: span 2 !important;
+        grid-row: span 1 !important;
+      }
     }
     @media (max-width: 480px) {
       .included-grid { grid-template-columns: 1fr; }
@@ -710,10 +718,10 @@
 
   <!-- Nav Bar -->
   <nav class="nav-bar">
-    <div class="nav-left">
+    <a href="https://www.premierblu.com" class="nav-left" style="text-decoration: none;">
       <img src="/public/pb-qr.png" alt="PremierBlu Logo" class="nav-logo">
       <span class="nav-title">PremierBlu</span>
-    </div>
+    </a>
     <a href="tel:8482090777" class="nav-contact">Contact Us</a>
   </nav>
 
@@ -772,6 +780,143 @@
         <svg class="included-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
         <h3 class="included-title">MLS-Ready Formats</h3>
         <p class="included-desc">High-res print + MLS-optimized on delivery</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work -->
+  <section id="our-work" style="background-color: #F3F4F8; padding: 96px 24px; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <span style="display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #1E3A8A; margin-bottom: 16px;" class="animate">
+        OUR WORK
+      </span>
+      <h2 style="font-size: 44px; font-weight: 700; color: #0F172A; line-height: 1.1; margin-bottom: 16px;" class="animate">
+        Listings That Sell.
+      </h2>
+      <p style="font-size: 18px; color: #475569; max-width: 600px; margin: 0 auto 64px;" class="animate">
+        Every home tells a story. Here's how we tell yours.
+      </p>
+
+      <!-- Photo Grid -->
+      <div id="work-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;" class="animate">
+        <!-- Hero image spans 2 columns wide and 2 rows tall on desktop -->
+        <div style="grid-column: span 2; grid-row: span 2; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DJI_0898.jpg" alt="Aerial exterior" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01003.jpg" alt="Primary bedroom" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01156.jpg" alt="Kitchen" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01197.jpg" alt="Living room" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01142.jpg" alt="Dining room" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01031.jpg" alt="Bedroom" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01048.jpg" alt="Primary suite" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01147.jpg" alt="Bathroom" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01071.jpg" alt="Bedroom" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01201.jpg" alt="Open living" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01042.jpg" alt="Bathroom" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+        <div style="aspect-ratio: 3 / 2; overflow: hidden; border-radius: 8px; background: #e5e7eb;">
+          <img src="/DSC01121.jpg" alt="Dining" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Object Removal Slider Section -->
+  <section id="object-removal" style="background-color: #ffffff; padding: 96px 24px; text-align: center;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <span style="display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #1E3A8A; margin-bottom: 16px;" class="animate">
+        SEE THE DIFFERENCE
+      </span>
+      <h2 style="font-size: 44px; font-weight: 700; color: #0F172A; line-height: 1.1; margin-bottom: 16px;" class="animate">
+        What's Possible
+      </h2>
+      <p style="font-size: 18px; color: #475569; max-width: 560px; margin: 0 auto 48px;" class="animate">
+        Standard clutter removal is free on every photo. Bigger transformations are a paid add-on. Drag to see.
+      </p>
+
+      <div 
+        id="ba-slider"
+        class="animate"
+        style="position: relative; width: 100%; max-width: 1100px; aspect-ratio: 3 / 2; margin: 0 auto 24px auto; overflow: hidden; border-radius: 8px; border: 1px solid rgba(30, 58, 138, 0.15); cursor: ew-resize; user-select: none; touch-action: pan-y;"
+      >
+        <!-- AFTER image (base layer, always fully visible) -->
+        <img 
+          src="/object-removal-after.jpg" 
+          alt="Clean empty bedroom after virtual renovation"
+          style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; display: block;"
+        />
+
+        <!-- BEFORE image (overlay, clipped from the right based on slider position) -->
+        <img 
+          id="ba-before-img"
+          src="/object-removal-before.jpg" 
+          alt="Cluttered bedroom before virtual renovation"
+          style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; display: block; clip-path: inset(0 50% 0 0);"
+        />
+
+        <!-- Divider line + handle -->
+        <div 
+          id="ba-divider"
+          style="position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #1E3A8A; transform: translateX(-50%); pointer-events: none;"
+        >
+          <div 
+            id="ba-handle"
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: #ffffff; border: 2px solid #1E3A8A; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); pointer-events: none;"
+          >
+            <span style="color: #1E3A8A; font-weight: 700; font-size: 14px; line-height: 1; letter-spacing: -1px;">‹ ›</span>
+          </div>
+        </div>
+
+        <!-- BEFORE label -->
+        <div style="position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: 4px; color: #1E3A8A; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; pointer-events: none; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          BEFORE
+        </div>
+
+        <!-- AFTER label -->
+        <div style="position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: 4px; color: #1E3A8A; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; pointer-events: none; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          AFTER
+        </div>
+      </div>
+
+      <p style="font-size: 14px; color: #475569; max-width: 700px; margin: 0 auto;" class="animate">
+        Example: Excessive Removal — $15/scene.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; max-width: 900px; margin: 48px auto 0 auto; text-align: left;" class="animate">
+        <div style="flex: 1 1 260px;">
+          <h3 style="font-size: 16px; font-weight: 700; color: #0F172A; margin: 0;">Standard Removal</h3>
+          <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: #1E3A8A; font-weight: 600; margin-top: 4px;">FREE — EVERY PHOTO</div>
+          <p style="font-size: 14px; color: #475569; margin-top: 6px; margin-bottom: 0; line-height: 1.5;">Clutter, cords, personal items, light tidying.</p>
+        </div>
+        <div style="flex: 1 1 260px;">
+          <h3 style="font-size: 16px; font-weight: 700; color: #0F172A; margin: 0;">Excessive Removal</h3>
+          <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: #1E3A8A; font-weight: 600; margin-top: 4px;">$15 / PHOTO</div>
+          <p style="font-size: 14px; color: #475569; margin-top: 6px; margin-bottom: 0; line-height: 1.5;">Bulky furniture, large single items, heavy clutter.</p>
+        </div>
+        <div style="flex: 1 1 260px;">
+          <h3 style="font-size: 16px; font-weight: 700; color: #0F172A; margin: 0;">Virtual Renovation</h3>
+          <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: #1E3A8A; font-weight: 600; margin-top: 4px;">$30 / SCENE</div>
+          <p style="font-size: 14px; color: #475569; margin-top: 6px; margin-bottom: 0; line-height: 1.5;">Full-scene rebuild. Empty, restage, transform.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -1000,7 +1145,7 @@
       <div class="footer-right">
         <img src="/public/equal-housing.png" alt="Equal Housing Opportunity" class="footer-trust">
         <div class="footer-trust-text">Licensed Real Estate Brokerage</div>
-        <div class="footer-trust-text">Serving NJ &middot; NYC Boroughs &middot; Manhattan</div>
+        <div class="footer-trust-text">Serving NJ</div>
       </div>
     </div>
   </footer>
@@ -1043,6 +1188,66 @@
         }
       });
     });
+
+    // Before/After Slider
+    (function() {
+      const slider = document.getElementById('ba-slider');
+      if (!slider) return;
+      
+      const beforeImg = document.getElementById('ba-before-img');
+      const divider = document.getElementById('ba-divider');
+      let isDragging = false;
+
+      function setPosition(percent) {
+        const p = Math.max(0, Math.min(100, percent));
+        beforeImg.style.clipPath = 'inset(0 ' + (100 - p) + '% 0 0)';
+        divider.style.left = p + '%';
+      }
+
+      function updateFromEvent(e) {
+        const rect = slider.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const x = clientX - rect.left;
+        const percent = (x / rect.width) * 100;
+        setPosition(percent);
+      }
+
+      slider.addEventListener('pointerdown', function(e) {
+        isDragging = true;
+        slider.setPointerCapture(e.pointerId);
+        updateFromEvent(e);
+      });
+
+      slider.addEventListener('pointermove', function(e) {
+        if (!isDragging) return;
+        updateFromEvent(e);
+      });
+
+      slider.addEventListener('pointerup', function(e) {
+        isDragging = false;
+        try { slider.releasePointerCapture(e.pointerId); } catch(err) {}
+      });
+
+      slider.addEventListener('pointercancel', function() {
+        isDragging = false;
+      });
+
+      // Initial affordance animation — start at 65%, ease to 50%
+      let start = 65;
+      setPosition(start);
+      setTimeout(function() {
+        const duration = 800;
+        const startTime = performance.now();
+        function step(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 4);
+          setPosition(65 - (15 * eased));
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }, 400);
+    })();
   </script>
 </body>
 </html>
